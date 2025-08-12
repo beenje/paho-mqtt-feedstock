@@ -31,7 +31,11 @@ tests:
         - paho
         - paho.mqtt
         - paho.mqtt.client
-      python_version: ${{ python_min }}.*
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - 3.*
+
 about:
   license: EPL-2.0 AND BSD-3-Clause
   license_file: LICENSE.txt
